@@ -6,7 +6,7 @@ import (
 )
 
 var GetEvent = &cobra.Command{
-	Use:   "get",
+	Use:   "get [(-o|--output=)json|yaml|template|...]",
 	Short: "Get an announcment",
 
 	Run: getEvent,
