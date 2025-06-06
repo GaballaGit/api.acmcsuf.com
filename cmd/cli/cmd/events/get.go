@@ -2,16 +2,18 @@ package events
 
 import(
 	"fmt"
+	"github.com/spf13/cobra"
+
 )
 
-var getEvent = &cobra.Command{
+var GetEvent = &cobra.Command{
 	Use: "get",
 	Short: "Get an announcment",
 
-	Run: GetEvent,
+	Run: getEvent,
 }
 
-func GetEvent(cmd *cobra.Command, args []string) {
+func getEvent(cmd *cobra.Command, args []string) {
 	fmt.Println("Get event called")
 }
 
