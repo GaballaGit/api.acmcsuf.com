@@ -61,6 +61,8 @@
 
           shellHook = ''
             export DATABASE_URL="file:dev.db?cache=shared&mode=rwc"
+	    export GOPATH=$PWD/.gopath
+	    export PATH=$PATH:$GOPATH/bin
             export CGO_ENABLED=0  # cgo compiler flags cause issues with delve when using Nix
             echo "Loaded dev shell."
           '';

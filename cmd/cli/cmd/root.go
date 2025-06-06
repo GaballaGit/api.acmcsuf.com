@@ -13,7 +13,7 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "cli",
+	Use:   "cli [announcements|events]",
 	Short: "An API gateway",
 	Long: `An API gateway for the CSUF ACM website
 	with the purpose of retrieving and storing
